@@ -31,3 +31,29 @@
 
 en:
   hello: "Hello world"
+
+activerecord:
+  attributes:
+    user:
+      name: 'UserName'
+      email: 'Email'
+      status: "Status"
+      phone_number: 'Phone Number'
+      password: 'Password'
+
+  errors:
+    models:
+      user:
+        attributes:
+          name:
+            cant_be_blank: 'Can't be blank'
+            should_be_valid: 'Should be valid'
+          email:
+            cant_be_blank: 'Can't be blank'
+            wrong_format: 'format is wrong'
+          phone_number:
+            cant_be_blank: 'Can't be blank'
+            should_be_valid_number: 'Should be valid number'
+          password:
+            cant_be_blank: 'Can't be blank'
+            should_be_8_char: 'Should contain 8 charactcer'
