@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
+  resources :messages
   scope path: "/api" do
     #users controller
-    root :to => "users#index"
+    root :to => "messages#index"
 
     get '/users/login', to: 'users#login'
-    get 'u/sers/forgot-password', to: 'users#forgot_password'
+    get '/users/forgot-password', to: 'users#forgot_password'
     resources :users
     
     #roles controller

@@ -21,8 +21,6 @@ class AuthService
   private
 
   def fetch_auth_token
-    token = generate_authentication_token
-    Rails.cache.write((AdminType::USER_SESSION_URL + token.to_s), @user.id, expires_in: 1.days)
-    return token
+    return encode_user_data({ user_id: @user.id })
   end
 end

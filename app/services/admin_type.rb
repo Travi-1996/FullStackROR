@@ -5,4 +5,5 @@ module AdminType
 
   #session-auth
   USER_SESSION_URL = 'users/auth/'
+  SECRET_KEY = 'Indium@Ravi'
 end

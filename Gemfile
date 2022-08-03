@@ -67,3 +67,10 @@ gem "pry-rails"
 gem 'redis'
 gem 'redis-namespace'
 gem 'redis-rails'
+
+#jwt token
+
+gem 'jwt'
+
+gem 'sidekiq'
+gem 'sidekiq-scheduler', '~> 4.0', '>= 4.0.2'
